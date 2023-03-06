@@ -179,8 +179,37 @@
 
 });
 
+// button - Copy Text to Clipboard
+function CopyPhone() {
+   // Get the text field
+   var copyText = document.getElementById("myPhone");
+ 
+   // Select the text field
+   copyText.select();
+   copyText.setSelectionRange(0, 99999); // For mobile devices
+ 
+    // Copy the text inside the text field
+   navigator.clipboard.writeText(copyText.value);
+ 
+   // Alert the copied text
+   alert("Copied: " + copyText.value);
+ }
 
-
+// button - Copy Text to Clipboard
+function CopyEmail() {
+   // Get the text field
+   var copyText = document.getElementById("myEmail");
+ 
+   // Select the text field
+   copyText.select();
+   copyText.setSelectionRange(0, 99999); // For mobile devices
+ 
+    // Copy the text inside the text field
+   navigator.clipboard.writeText(copyText.value);
+ 
+   // Alert the copied text
+   alert("Copied: " + copyText.value);
+ }
 
 
 
